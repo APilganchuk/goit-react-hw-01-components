@@ -10,10 +10,11 @@
 }
 .transaction_history tbody:nth-child(2n + 1) {
   background-color: rgb(182, 157, 157);
+  
 }
 .transaction_history th {
   padding: 10px 0;
-  
+
   border: 2px solid black;
   background-color: aqua;
 }
