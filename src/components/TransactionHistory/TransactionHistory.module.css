@@ -1,13 +1,19 @@
 .transaction_history {
-  border: 1px solid black;
+  border-collapse: collapse;
+  border: 2px solid black;
 }
 .transaction_history tr {
   border: 1px solid black;
 }
 .transaction_history td {
-  border: 1px solid black;
   padding: 5px 10px;
+
+  border: 2px solid black;
+
   border-collapse: collapse;
+}
+.transaction_history tbody:nth-child(2n + 1) {
+  background-color: rgb(182, 157, 157);
 }
 .transaction_history th {
   border: 1px solid black;
