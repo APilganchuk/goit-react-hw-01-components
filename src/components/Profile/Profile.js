@@ -1,16 +1,17 @@
 import PropTypes from "prop-types";
 import defaultPic from "../../img/default-img.jpg";
+import styles from "./Profile.module.css";
 
 const Profile = ({ name, tag, location, avatar, stats }) => (
-  <div className="profile">
-    <div className="description">
-      <img src={avatar} alt="Аватар пользователя" className="avatar" />
+  <div className={styles.card}>
+    <div className={styles.profile}>
+      <img src={avatar} alt="Аватар пользователя" className={styles.avatar} />
       <p className="name">{name}</p>
       <p className="tag">@{tag}</p>
       <p className="location">{location}</p>
     </div>
 
-    <ul className="stats">
+    <ul className={styles.stats}>
       <li>
         <span className="label">Followers:</span>
         <span className="quantity">{stats.followers}</span>

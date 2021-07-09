@@ -1,3 +1,5 @@
+import './App.css'
+
 import Profile from "./components/Profile/Profile";
 import { name, tag, location, avatar, stats } from "./data/user.json";
 
